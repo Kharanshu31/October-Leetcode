@@ -31,14 +31,13 @@ public:
         }
         ans=max(ans,ct);
         
-        if(none==1)
-        {
-            //cout<<"pos : "<<onepos<<"\n";
-            return max(onepos,n-1-onepos);
-        }
+//         if(none==1)
+//         {
+//             //cout<<"pos : "<<onepos<<"\n";
+//             return max(onepos,n-1-onepos);
+//         }
         
-        return max((ans+1)/2,max(onepos,n-1-lastpos));
-        
+        return max((ans+1)/2,max(onepos,n-1-lastpos));   
         
     }
 };
